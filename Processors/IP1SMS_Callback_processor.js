@@ -1,3 +1,14 @@
+/*************************************************
+ * Create a new processor with the following parameters:
+ * Name: IP1SmsCallback
+ * Name: IP1SmsCallback
+ *
+ * Usage:
+ * Fill in the Callback URL at IP1SMS.com 
+ * URL: https://username:password@instancename.service-now.com/IP1SmsCallback.do
+ * Replace username and password with a user that has access to write to your inbound table.
+ *************************************************/
+
 (function process(g_request, g_response, g_processor) {
 	
 	var incsmsid = g_request.getParameter("incsmsid");
